@@ -11,10 +11,17 @@ import java.util.Map;
 @Controller
 public class EmployeeController {
 
+    private EmployeeRepository employeeRepository;
+
+    public EmployeeController(EmployeeRepository employeeRepository) {
+        this.employeeRepository = employeeRepository;
+    }
+
     @GetMapping("/")
     public ModelAndView sayHello() {
 
         return new ModelAndView("employees",
-                Map.of("now", LocalDateTime.now()));
+                Map.of("now", LocalDateTime.now(),
+                        "employees", employeeRepository.listEmployeeNames()));
     }
 }
