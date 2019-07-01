@@ -22,7 +22,17 @@ public class NameConverterTest {
     }
 
     @Test
-    void testAll() {
-        assertEquals("arvizturo tukorfurogep", new NameConverter().convertName("ÁrVízTŰRŐ tükÖrFúróGÉP"));
+    void testAllAcutes() {
+        assertEquals("arvizturo tukorfurogep", new NameConverter().convertName("árvíztűrő tükörfúrógép"));
+    }
+
+    @Test
+    void testSpecChars() {
+        assertEquals("$_8", new NameConverter().convertName("$_8"));
+    }
+
+    @Test
+    void testEmpty() {
+        assertEquals("", new NameConverter().convertName(""));
     }
 }
