@@ -20,7 +20,7 @@ public class EmployeeController {
     }
 
     @GetMapping("/")
-    public ModelAndView sayHello() {
+    public ModelAndView listEmployees() {
 
         return new ModelAndView("employees",
                 Map.of("now", LocalDateTime.now(),
