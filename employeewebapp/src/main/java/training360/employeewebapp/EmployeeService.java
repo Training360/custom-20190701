@@ -22,4 +22,8 @@ public class EmployeeService {
         }
         return lowercaseNames;
     }
+
+    public void createEmployee(String name) {
+        employeeRepository.createEmployee(name);
+    }
 }
