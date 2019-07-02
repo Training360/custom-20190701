@@ -11,11 +11,7 @@ import java.util.Map;
 @Controller
 public class EmployeeController {
 
-    private EmployeeRepository employeeRepository;
 
-    public EmployeeController(EmployeeRepository employeeRepository) {
-        this.employeeRepository = employeeRepository;
-    }
 
     @GetMapping("/")
     public ModelAndView sayHello() {
