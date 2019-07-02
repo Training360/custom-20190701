@@ -15,7 +15,11 @@ public class EmployeeRepository {
     }
 
     public List<String> listEmployeeNames() {
-        return jdbcTemplate.query("select name from employee",
+        return jdbcTemplate.query("select name from employee order by name",
                 (rs, i) -> rs.getString("name"));
+    }
+
+    public void createEmployee(String name) {
+        jdbcTemplate.update("insert into employee(name) values (?)", name);
     }
 }
