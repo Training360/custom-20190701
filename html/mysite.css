@@ -1,0 +1,23 @@
+h1 {
+	color: red;  	
+}
+
+p.allat {
+ 	color: green;
+}
+
+table {
+   border-collapse: collapse;
+border: 1px solid yellow;
+}
+
+td {
+  border: 1px solid yellow;
+}
+
+
+tr:nth-child(2) {background-color: #f2f2f2;}
+
+#jo-cella {
+	color: pink;
+}
