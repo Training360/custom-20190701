@@ -1,7 +1,6 @@
-# custom-20190701
-Személyreszabott SZT-01 oktatás
+# Személyreszabott SZT-01 oktatás gyakorlati anyaga
 
-https://www.dropbox.com/s/tn7j4sw2kv0qdin/locations-app.jar?dl=0
+https://training360.com/szoftverteszteles-java-platformon-tanfolyam-szt-01
 
 https://search.maven.org/remotecontent?filepath=mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar
 
